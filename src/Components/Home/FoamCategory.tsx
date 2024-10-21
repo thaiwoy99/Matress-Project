@@ -9,22 +9,26 @@ import { DiVim } from 'react-icons/di'
 const Images = [
     { Img: Ashfoam,
       content:" Ash foam mattresses for premium comfort",
-      type:" Ash Foam"
+      type:" Ash Foam",
+      id:1
 
     },
     { Img: latexfoam,
       content:" Latex foam mattresses for your comfort",
-      type:" Latex Foam"
+      type:" Latex Foam",
+      id:2
 
     },
     { Img: RoyalFoam,
     content:" Royal foam mattresses for luxurious sleep",
-    type:" Royal Foam"
+    type:" Royal Foam",
+    id:3
 
   },
   { Img: OtherBrand,
     content:" Other brand mattresses for various needs",
-    type:" Other Brand"
+    type:" Other Brand",
+    id:4
 
   },
     
@@ -39,9 +43,9 @@ const FoamCategory = () => {
     <div>
         <div className=' md:flex md:w-[90%] flex-wrap mx-auto  md:justify-between '>
             {
-                Images.map(({Img,content,type})=>{
+                Images.map(({Img,content,type,id})=>{
                     return (
-                        <div className='w-[80%] mx-auto bg-white rounded-[15px] text-white pb-8 shadow-2xl mb-5  md:flex   md:w-[45%] md:mx-0  md:pb-0'>
+                        <div key={id} className='w-[80%] mx-auto bg-white rounded-[15px] text-white pb-8 shadow-2xl mb-5  md:flex   md:w-[45%] md:mx-0  md:pb-0'>
                             <div className=' mb-4 w-full md:w-[50%] h-full  md:mb-0'>
                                 <img src={Img} className='rounded-t-[10px] size-full md:rounded-tr-none'/>
                                 </div>
