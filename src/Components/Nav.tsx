@@ -15,7 +15,7 @@ const Nav:React.FC= () => {
 
     
     
-    <nav className='bg-[#f40000] font-[Montserrat]'>
+    <nav className='bg-[#f40000] font-[Montserrat] fixed w-full z-30 top-0'>
 
       {/*Desktop*/} 
         <div className=' w-[95%] justify-between text-white pl-8 py-6 items-center pr-10 hidden md:flex'>
