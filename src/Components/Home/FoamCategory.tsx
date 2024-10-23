@@ -41,7 +41,7 @@ const Images = [
 const FoamCategory = () => {
   return (
     <div>
-        <div className=' md:flex md:w-[90%] flex-wrap mx-auto  md:justify-between '>
+        <div className=' md:flex md:w-[90%] flex-wrap mx-auto  md:justify-between mb-8 '>
             {
                 Images.map(({Img,content,type,id})=>{
                     return (

@@ -18,7 +18,7 @@ const Slider:React.FC = () => {
 
   return (
 
-    <div className='w-[90%] mx-auto my-8 '>
+    <div className='w-[90%] mx-auto mb-8  mt-[200px]'>
         <Swiper 
                 slidesPerView={1}
                 spaceBetween={10}
