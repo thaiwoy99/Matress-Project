@@ -106,6 +106,7 @@ const Nav:React.FC= () => {
                 <Link to ='/about' className='block hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2  rounded-lg'>About</Link>
                 <Link to ='/contact ' className='block hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2  rounded-lg'>Contact</Link>
                 
+                
 
               </div> 
           
