@@ -22,7 +22,7 @@ const Products:FC = () => {
             }
             catch(err){
                 console.log(err)
-
+ 
             }
 
 
