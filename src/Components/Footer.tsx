@@ -10,7 +10,7 @@ const Footer = () => {
   <footer className='text-white'>
 
 
-    <div className='bg-[#f40000] font-[Montserrat]'>
+    <div className='bg-[#f40000] font-[Montserrat] pb-7'>
 
 
       <div className='w-[60%] mx-auto text-left space-y-7 md:flex md:w-[90%] justify-between items-start md:space-y-0'>
@@ -23,11 +23,11 @@ const Footer = () => {
 
    <div className='flex flex-col'>
    
-    <Link to ='/shop' className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'>View products</Link>
+    <Link to ='/shop' className='hover:text-[#f6d00c]  mb-1 pb-2 px-3 rounded-lg'>View products</Link>
     
-    <Link to ='/about' className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'>About Us</Link>
-    <Link to ='/service' className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'>Service</Link>
-    <Link to ='/contact'className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'>Contact Us</Link>
+    <Link to ='/about' className='hover:text-[#f6d00c]  mb-1 pb-2 px-3 rounded-lg'>About Us</Link>
+    <Link to ='/service' className='hover:text-[#f6d00c]  mb-1 pb-2 px-3 rounded-lg'>Service</Link>
+    <Link to ='/contact'className='hover:text-[#f6d00c]  mb-1 pb-2 px-3 rounded-lg'>Contact Us</Link>
     </div> 
     </div>
 

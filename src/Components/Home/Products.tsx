@@ -9,14 +9,14 @@ import {prodProp,dataObj} from  "../../utilities/utility"
 
 const Products:FC = () => {
     const [data,setData] = useState<prodProp[]|null>(null)
-    const [error,setError] =useState<string|null>(null)
+    
 
 
     useEffect(()=>{
         const fetchInfo = async()=>{
             try{
                 const response = await axiosInstance.get<dataObj>("/products/limit/8") 
-                console.log(response.data.products)
+                
                 setData(response.data.products)
 
             }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import Logo from "../assets/Images/Mattress.jpg"
 import { IoSearchSharp } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
@@ -29,17 +29,18 @@ const Nav:React.FC= () => {
         <div className='  w-[60%] '>
             {/*Input*/} 
             <form className='w-[350px] relative mx-auto mb-5'>
-                <input type="text"  placeholder='Search'  className='w-full py-2 border-2 border-gray-300 bg-[#f8f8f8] focus:outline-none rounded-lg pl-3 focus:border-[blue] focus:border-[3px]'/>
+                <input type="text"  placeholder='Search'  className='w-full py-2 border-2 text-black border-gray-300 bg-white  focus:outline-none rounded-lg pl-3 focus:border-[blue] focus:border-[3px]'/>
                 <button className='text-[30px] text-black absolute right-4 top-2'><IoSearchSharp /></button>
+                
 
             </form>
             {/*Links*/} 
             <div className='w-[60%] flex justify-between text-[1.2rem] mx-auto  font-semibold  '>
-                <Link to ='/' className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'> Home </Link>
-                <Link to ='/shop' className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'>Shop</Link>
-                <Link to ='/service' className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'>Service</Link>
-                <Link to ='/about' className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'>About</Link>
-                <Link to ='/contact'className='hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg'>Contact</Link>
+            <Link to ='/' className={`${location.pathname === "/" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg`}>Home</Link>
+            <Link to ='/shop' className={`${location.pathname === "/shop" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg`}>Shop</Link>
+            <Link to ='/service' className={`${location.pathname === "/service" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg`}>Service</Link>
+            <Link to ='/about' className={`${location.pathname === "/about" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg`}>About</Link>
+            <Link to ='/contact' className={`${location.pathname === "/contact" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg`}>Contact</Link>
                 
 
             </div>
@@ -89,7 +90,7 @@ const Nav:React.FC= () => {
           </div>
 
           <form className={`w-[350px] relative mx-auto mb-5 ${closeMobile ? "block " :" hidden"}`}>
-                <input type="text"  placeholder='Search'  className='w-full py-2 border-2 border-gray-300 bg-[#f8f8f8] focus:outline-none rounded-lg pl-3 focus:border-[blue] focus:border-[3px]'/>
+                <input type="text"  placeholder='Search'  className='w-full py-2 border-2 border-gray-300 bg-white text-black focus:outline-none rounded-lg pl-3 focus:border-[blue] focus:border-[3px]'/>
                 <button className='text-[30px] text-black absolute right-4 top-2'><IoSearchSharp /></button>
 
             </form>
@@ -100,13 +101,13 @@ const Nav:React.FC= () => {
               
              
              <div className ={`text-[1.2rem] mx-auto flex flex-col space-y-4 font-semibold ${closeMobile ? "hidden " :" block"}`}>
-                <Link to ='/' className='block hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2  rounded-lg'> Home </Link>
-                <Link to ='/shop'  className='block hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2  rounded-lg'>Shop</Link>
-                <Link to ='/service'  className='block hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2  rounded-lg'>Service</Link>
-                <Link to ='/about' className='block hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2  rounded-lg'>About</Link>
-                <Link to ='/contact ' className='block hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2  rounded-lg'>Contact</Link>
                 
-                
+           <Link to ='/' className={`${location.pathname === "/" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 block rounded-lg`}>Home</Link>
+            <Link to ='/shop' className={`${location.pathname === "/shop" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 block rounded-lg`}>Shop</Link>
+            <Link to ='/service' className={`${location.pathname === "/service" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 block rounded-lg`}>Service</Link>
+            <Link to ='/about' className={`${location.pathname === "/about" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 block rounded-lg`}>About</Link>
+            <Link to ='/contact' className={`${location.pathname === "/contact" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 block rounded-lg`}>Contact</Link>
+   
 
               </div> 
           

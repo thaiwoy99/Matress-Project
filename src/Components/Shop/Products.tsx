@@ -8,9 +8,9 @@ import Button from "./Button"
 
 const Products:FC = () => {
     const [data,setData] = useState<prodProp[]|[]>([])
-    const [error,setError] =useState<string|null>(null)
+    
     const[displayData,setDisplay]= useState<prodProp[]|[]>  ([])
-    console.log(displayData)
+    
     const [currentPage, setCurrentPage] = useState<number>(0);
     const itemsPerPage:number = 8;
     
@@ -20,8 +20,13 @@ const Products:FC = () => {
     useEffect(()=>{
         const fetchInfo = async()=>{
             try{
-                const response = await axiosInstance.get<dataObj>("/products") 
-                console.log(response.data.products)
+                const response = await axiosInstance.get<dataObj>("/products")
+              
+              
+             //  GET /products/search/{query}
+
+  
+                
                 setData(response.data.products)
                 setDisplay (response.data.products)
 
@@ -37,13 +42,7 @@ const Products:FC = () => {
 
     }, [])
 
-    const showBrand =(id:number)=>{
-      setData(prev=>prev.filter((data)=> data.category_id ===id
-
-      ))  
-
-      
-    }
+    
     
 
     const startIndex:number = currentPage * itemsPerPage;
@@ -93,7 +92,7 @@ const Products:FC = () => {
         <button
           onClick={handlePreviousPage}
           disabled={currentPage === 0}
-          className="px-4 py-2 bg-gray-300 rounded"
+          className="px-3 py-2 bg-gray-300 rounded"
         >
           Previous
         </button>
@@ -102,7 +101,7 @@ const Products:FC = () => {
           <button
             key={pageIndex}
             onClick={() => handlePageClick(pageIndex)}
-            className={`px-4 py-2 rounded ${
+            className={`px-3 py-2 rounded ${
               currentPage === pageIndex ? 'bg-blue-500 text-white' : 'bg-gray-300'
             }`}
           >
@@ -112,7 +111,7 @@ const Products:FC = () => {
         <button
           onClick={handleNextPage}
           disabled={(currentPage + 1) * itemsPerPage >= data.length}
-          className="px-4 py-2 bg-gray-300 rounded"
+          className="px-3 py-2 bg-gray-300 rounded"
         >
           Next
         </button>
