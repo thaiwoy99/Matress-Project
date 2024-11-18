@@ -89,7 +89,7 @@ const Nav:React.FC= () => {
 
           </div>
 
-          <form className={`w-[350px] relative mx-auto mb-5 ${closeMobile ? "block " :" hidden"}`}>
+          <form className={`w-[300px] relative mx-auto mb-5 ${closeMobile ? "block " :" hidden"}`}>
                 <input type="text"  placeholder='Search'  className='w-full py-2 border-2 border-gray-300 bg-white text-black focus:outline-none rounded-lg pl-3 focus:border-[blue] focus:border-[3px]'/>
                 <button className='text-[30px] text-black absolute right-4 top-2'><IoSearchSharp /></button>
 

@@ -49,7 +49,7 @@ const ContactPage: React.FC = () => {
         <div className="w-full relative lg:w-[46%] mb-10">
           <img src={conImage} className="w-full rounded-lg lg:size-full" alt="Contact Us" />
           <h1 className="text-2xl absolute top-3 text-white font-semibold left-10">Contact Us</h1>
-          <div className="space-y-5 p-7 bg-white shadow-lg w-[90%] mx-auto pl-5 rounded-lg absolute bottom-10 left-[50%] translate-x-[-50%] lg:bottom-40">
+          <div className="space-y-5 p-7 bg-white shadow-lg w-[90%] mx-auto pl-5 rounded-lg absolute bottom-3 md:bottom-10 left-[50%] translate-x-[-50%] lg:bottom-40">
             <div className="flex space-x-4 items-center">
               <span className="text-purple-600 text-3xl">
                 <IoCallOutline />

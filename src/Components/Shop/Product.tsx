@@ -32,7 +32,7 @@ const Product:React.FC <prodProp> = (props) => {
      
  
   return (
-    <div  onClick={()=>{handleNavigate(props.id)}} className=' w-[85%]  mx-auto  md:w-[40%] lg:w-[23%]  mb-4  shadow-2xl rounded-xl md:h-[110vh] relative transform transition-transform duration-300 hover:scale-105 '>
+    <div  onClick={()=>{handleNavigate(props.id)}} className=' w-[85%]  mx-auto  md:w-[40%] lg:w-[23%]  mb-8 shadow-2xl rounded-xl md:h-[110vh] relative transform transition-transform duration-300 hover:scale-105 '>
         <div className='w-full h-[250px] mb-3 ' >
             <img src={imgUrl} alt=""  className='w-full h-full rounded-t-xl'/>
         </div>

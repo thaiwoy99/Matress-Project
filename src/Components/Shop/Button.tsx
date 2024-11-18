@@ -41,12 +41,12 @@ const Button:FC<Props> = (props) => {
   }
   
   return (
-    <div className='mt-[200px] w-[90%] mx-auto text-center'>
+    <div className='mt-[200px] w-[90%] mx-auto text-center '>
         <p className='font-bold text-2xl mb-5'>Choose a filter:</p>
-        <div className=' flex justify-center flex-wrap w-[90%]  min-[500px]:w-[73%] gap-3 m-auto md:w-[80%] lg:w-[60%]'>
+        <div className=' flex justify-center flex-wrap w-[90%]  border-2 min-[500px]:w-[73%] gap-3 m-auto md:w-[80%] lg:w-[60%]'>
          { buttons.map(({type,id})=>{
           
-            return (<button key={id} className={`border-2 border-[#f6d00c] py-1 w-[150px] font-bold  hover:bg-yellow-300
+            return (<button key={id} className={`border-2 border-[#f6d00c] py-1 w-[130px] min-[410px]:w-[150px]  font-bold  hover:bg-yellow-300
               rounded-lg  mb-4  ${ ActiveButton==id ? `${colors[id-1]} text-white `: " bg-white"}`} onClick ={()=>{showSelected(id)}}>{type}</button>)
           }) }
 
