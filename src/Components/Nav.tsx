@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link,useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../assets/Images/Mattress.jpg"
 import { IoSearchSharp } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";

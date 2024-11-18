@@ -1,9 +1,9 @@
-import React from 'react'
+
 import Ashfoam from "../../assets/Images/ashfoam.jpg"
 import latexfoam from "../../assets/Images/latexfoam.jpg"
 import RoyalFoam from "../../assets/Images/royalfoam.jpg"
 import OtherBrand from "../../assets/Images/sleepscience.jpg"
-import { DiVim } from 'react-icons/di'
+
 
 
 const Images = [
