@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import Logo from "../assets/Images/Mattress.jpg"
+import Logo from "../assets/Images/Logo.png"
 import { IoSearchSharp } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -21,8 +21,8 @@ const Nav:React.FC= () => {
         <div className=' w-[95%] justify-between text-white pl-8 py-6 items-center pr-10 hidden md:flex'>
 
        {/*Image logo*/} 
-        <div className='w-[130px]'>
-            <img src={Logo} alt="" className='size-full' />
+        <div className='w-[130px] bg-[#f40000]'>
+            <img src={Logo} alt="" className='size-full bg-[#f40000]' />
         </div>
         
         {/*link and Input*/}

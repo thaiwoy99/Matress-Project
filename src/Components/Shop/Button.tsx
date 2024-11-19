@@ -47,7 +47,7 @@ const Button:FC<Props> = (props) => {
          { buttons.map(({type,id})=>{
           
             return (<button key={id} className={`border-2 border-[#f6d00c] py-1 w-[130px] min-[410px]:w-[150px]  font-bold  hover:bg-yellow-300
-              rounded-lg  mb-4  ${ ActiveButton==id ? `${colors[id-1]} text-white `: " bg-white"}`} onClick ={()=>{showSelected(id)}}>{type}</button>)
+              rounded-lg  mb-4  ${ ActiveButton==id ?`${colors[id-1]} text-white `: " bg-white"}`} onClick ={()=>{showSelected(id)}}>{type}</button>)
           }) }
 
         </div>
