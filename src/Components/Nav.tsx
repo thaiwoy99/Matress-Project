@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import Logo from "../assets/Images/Logo.png"
-import { IoSearchSharp } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
