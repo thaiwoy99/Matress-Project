@@ -18,24 +18,18 @@ const Nav:React.FC= () => {
     <nav className='bg-[#f40000] font-[Montserrat] fixed w-full z-30 top-0'>
 
       {/*Desktop*/} 
-        <div className=' w-[95%] justify-between text-white pl-8 py-6 items-center pr-10 hidden md:flex'>
+        <div className=' w-[95%] justify-between text-white pl-8 py-2  items-center pr-10 hidden md:flex'>
 
        {/*Image logo*/} 
         <div className='w-[130px] bg-[#f40000]'>
-            <img src={Logo} alt="" className='size-full bg-[#f40000]' />
+            <img src={Logo} alt="" className='size-full ' />
         </div>
         
         {/*link and Input*/}
         <div className='  w-[60%] '>
-            {/*Input*/} 
-            <form className='w-[350px] relative mx-auto mb-5'>
-                <input type="text"  placeholder='Search'  className='w-full py-2 border-2 text-black border-gray-300 bg-white  focus:outline-none rounded-lg pl-3 focus:border-[blue] focus:border-[3px]'/>
-                <button className='text-[30px] text-black absolute right-4 top-2'><IoSearchSharp /></button>
-                
-
-            </form>
+            
             {/*Links*/} 
-            <div className='w-[60%] flex justify-between text-[1.2rem] mx-auto  font-semibold  '>
+            <div className='w-[60%] flex justify-between text-[1.2rem] mx-auto  mt-10 font-semibold  '>
             <Link to ='/' className={`${location.pathname === "/" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg`}>Home</Link>
             <Link to ='/shop' className={`${location.pathname === "/shop" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg`}>Shop</Link>
             <Link to ='/service' className={`${location.pathname === "/service" ? " text-[#f6d00c] border-b" : "text-white "} hover:text-[#f6d00c] hover:border-b border-[#f6d00c] mb-1 pb-2 px-3 rounded-lg`}>Service</Link>
@@ -89,11 +83,6 @@ const Nav:React.FC= () => {
 
           </div>
 
-          <form className={`w-[300px] relative mx-auto mb-5 ${closeMobile ? "block " :" hidden"}`}>
-                <input type="text"  placeholder='Search'  className='w-full py-2 border-2 border-gray-300 bg-white text-black focus:outline-none rounded-lg pl-3 focus:border-[blue] focus:border-[3px]'/>
-                <button className='text-[30px] text-black absolute right-4 top-2'><IoSearchSharp /></button>
-
-            </form>
 
 
 

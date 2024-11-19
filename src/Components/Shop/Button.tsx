@@ -42,7 +42,7 @@ const Button:FC<Props> = (props) => {
   
   return (
     <div className='mt-[200px] w-[90%] mx-auto text-center '>
-        <p className='font-bold text-2xl mb-5'>Choose a filter:</p>
+        <p className='font-bold text-xl mb-5'>Choose a mattress:</p>
         <div className=' flex justify-center flex-wrap w-[90%]   min-[500px]:w-[73%] gap-3 m-auto md:w-[80%] lg:w-[60%]'>
          { buttons.map(({type,id})=>{
           
