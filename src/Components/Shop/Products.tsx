@@ -1,6 +1,7 @@
 import { useState,FC ,useEffect} from "react"
 import {prodProp,dataObj} from  "../../utilities/utility"
 import axiosInstance from "../../Axios/axiosInstance"
+import { useLocation} from 'react-router-dom';
 import Product from "./Product"
 import Button from "./Button"
 
@@ -13,6 +14,17 @@ const Products:FC = () => {
     
     const [currentPage, setCurrentPage] = useState<number>(0);
     const itemsPerPage:number = 8;
+
+
+    
+  const location = useLocation();
+  const id = location.state?.id; // Retrieve the passed ID
+
+  useEffect(() => {
+    if (id) {
+      setData(displayData.filter((data)=> data.category_id ===id))
+    }
+  }, [displayData]);
     
   
 
@@ -72,7 +84,7 @@ const Products:FC = () => {
 
   return (
     <div className=" border-black">
-        <Button setData={setData} data={data} displayData={displayData}/>
+        <Button setData={setData} data={data} displayData={displayData} id={id}/>
          <div className=" w-full md:flex md:flex-wrap  justify-around">
     {
         currentItems?.map((data)=>{

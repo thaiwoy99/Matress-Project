@@ -51,7 +51,7 @@ const Nav:React.FC= () => {
          
 
          {/*Mobile*/} 
-         <div className='text-white py-3 w-[90%] mx-auto md:hidden'>
+         <div className='text-white  w-[90%] mx-auto md:hidden'>
 
 
             <div className='flex  justify-between items-center mb-2'>

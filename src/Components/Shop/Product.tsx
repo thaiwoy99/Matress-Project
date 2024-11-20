@@ -9,6 +9,7 @@ const Product:React.FC <prodProp> = (props) => {
   const handleNavigate = (id:number) => {
     navigate(`/matress/${id}`);
   }
+  
 
   
   const Brand:string= props.category_id==1? "Royal foam": props.category_id==2? "Latex foam": props.category_id==3 ? 'AshFoam':props.category_id==4 ?"ForeignBrand" : ""
