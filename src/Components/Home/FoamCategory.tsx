@@ -34,7 +34,7 @@ const Images = [
   },
   { Img: OtherBrand,
     content:" Other brand mattresses for various needs",
-    type:" Other Brand",
+    type:" Other Brands",
     id:4
 
   },

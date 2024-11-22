@@ -45,7 +45,7 @@ const Product:React.FC <prodProp> = (props) => {
         </div>
         <div className="pl-5">
         <button onClick={()=>{handleNavigate(props.id)}} className="bg-gray-700 px-4 py-2 text-white rounded-md mb-7
-         hover:bg-gray-800 md:absolute bottom-0 ">View Products</button>
+         hover:bg-gray-800 md:absolute bottom-0 ">View Product</button>
         </div>
         <div className={`${colors[props.category_id-1]} text-white inline-block px-1 py-1 rounded-md absolute top-0 `} >
           <p>{Brand}</p>
